@@ -1,0 +1,162 @@
+/*面包屑导航*/
+#bread_crumb{
+	height:36px;
+	padding-top:10px;
+}
+#bread_crumb a{
+	color:#636363;
+	padding-right:3px;
+}
+/*头部*/
+	section div.head{
+		margin:20px 0;
+		height:20px;
+	}
+	section .head h2{
+		font-family:'microsoft yahei';
+		color:#000;
+		margin-top:-5px;
+	}
+	section .head p input{
+		width:180px;
+		height:20px;
+		padding-left:10px;
+		font-size:12px;
+		margin-right:5px;
+	}
+	section .head p button{
+		border:0;
+		outline:0;
+		background:#fe3227;
+		width:60px;
+		height:26px;
+		color:white;
+		border-radius:4px;
+		cursor:pointer;
+		position:relative;
+		top:2px;
+	}
+/*中部*/
+/*盒子头部*/
+	section .box .imfor-top{
+		display:flex;
+		justify-content:space-between;
+		background-image:linear-gradient(to top,#E7E7E6 0%,#F4F3F4 100%);
+		height:37px;
+		line-height:37px;
+		border-top:1px solid silver;
+		box-shadow:0 3px 3px #ddd;
+		margin-bottom:20px;
+		font-weight:normal;
+	}
+	section .imfor-top p{
+		text-align:center;
+	}
+	section .imfor-top p:nth-child(2){
+		width:35%;
+	}
+	section .imfor-top p{
+		width:13%;
+	}
+	#time,#state{
+		font-size:12px;
+		height:24px;
+		position:relative;
+		top:2px;
+	}
+/*盒子主体*/
+	section .box .imfor{
+		display:flex;
+		justify-content:space-between;
+		border:1px solid #ddd;
+		border-left:0;
+		/*height:116px;*/
+		box-sizing:border-box;
+		background:#fff;
+		font-weight:normal;
+		margin-bottom:14px;
+	}
+	section .imfor>div{
+		border-left:1px solid #ddd;
+		text-align:center;
+        padding-top:20px;
+	}
+	section .imfor>div:hover{
+		background:#EEF6FF;
+	}
+	section .box .imfor .product{
+		width:35%;
+		/*padding-top:25px;*/
+		padding-left:20px;
+	}
+	section .box .imfor div{
+		width:13%;
+		/*line-height:116px;*/
+	}
+	/*第1,7列*/
+    section .box div.manipulate{
+        padding-top:35px;
+    }
+	section .box div.manipulate a{
+		color:#0AA1ED;
+        /*padding-top:75px;*/
+        display:block;
+        margin:10px 0;
+	}
+	/*第2列*/
+	section .box .imfor .product div{
+		width:400px;
+		text-align:left;
+		margin:5px;
+		line-height:normal;
+		/*background:red;*/
+	}
+    section .box .imfor .product div p{
+        padding-top: 5px;
+        cursor: pointer;
+        width: 330px;
+        height:36px;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+	section .box .imfor .product a img{
+		/*position:relative;*/
+		/*top:-5px;*/
+		margin-right:5px;
+	}
+	/*第5,7列*/
+    section .box .imfor .num,section .box div.time,section .box div.price,section .box div.state,section .box div.receiver{
+		padding-top:55px;
+		/*line-height:normal;*/
+	}
+	/*第7列*/
+	section .box .manipulate a{
+		/*display:block;*/
+		/*margin-bottom:5px;*/
+	}
+/*盒子尾部*/
+	section div.foot{
+		margin-top:33px;
+		height:40px;
+	}
+	section div.foot p button{
+		border:0;
+		outline:0;
+		background:#fe3227;
+		width:60px;
+		line-height:25px;
+		height:25px;
+		color:white;
+		border-radius:4px;
+		cursor:pointer;
+	}
+	section div.foot p input{
+		color:#fe3227;
+		width:25px;
+		height:25px;
+		border:0;
+		background:transparent;
+		text-align:center;
+		font-weight:bold;
+	}

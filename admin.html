@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-后台管理</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/admin.css">
+	</head>
+ <body onload="loadPage()">
+		<!--主体内容-->
+		<div class="container">
+			<!--侧边-->
+			<aside>
+				<h2>心灵驿站后台</h2>
+				<div class="welcome">
+					<a href="index.html"><span></span></a>
+					<span>欢迎回来</span>
+					<span>超级管理员</span>
+				</div>
+				<div class="home">后台首页</div>
+				<dl class="data">
+					<dt>数据管理</dt>
+					<dd>商品管理</dd>
+					<dd>用户管理</dd>
+					<dd>订单管理</dd>
+				</dl>
+				<!--<dl class="content">
+					<dt>内容管理</dt>
+					<dd>首页商品管理</dd>
+					<dd>功能页面</dd>
+				</dl>-->
+			</aside>
+			<!--主体-->
+			<section id="section">
+				<!--头部-->
+				<header>
+					<h2>用户管理</h2>
+				</header>
+				<!--显示部分-->
+				<div id="principal">
+					<!--头-->
+					<div class="header">
+						<label for="pageSize">每页显示数：</label>
+						<select name="pageSize" id="pageSize" onchange="loaduser(1)">
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+						</select>
+						<p>
+							<input type="text" id="search" placeholder="请输入要查询的登录名">
+							<a href="javascript:loaduser(1);"><img src="img/admin/search.png" alt="search"></a>
+						</p>
+					</div>
+					<!--身-->
+					<table id="table">
+						<thead>
+							<tr>
+								<th width="5%">
+									<p class="checkall">
+										<input type="CheckBox" id="checkall" onclick="checkAll(this.checked);">
+										<label for="checkall">全选</label>
+									</p>
+								</th>
+								<th>编号</th>
+								<th width="17%">头像</th>
+								<th>登录名</th>
+								<th width="8%">用户名</th>
+								<th width="8%">性别</th>
+								<th width="16%">邮箱</th>
+								<th>电话</th>
+								<th>操作</th>
+							</tr>
+							<tr><td colspan="9" class="hr"></td></tr>
+						</thead>
+						<tbody id="body"></tbody>
+						<tfoot id="foot">
+							<tr>
+								<td colspan="2">
+									<p class="btns">
+										<button class="btn" onclick="deleteAll();">删除</button>
+										<button class="btn" onclick="adduser();">添加</button>
+									</p>
+								</td>
+								<td colspan="7">
+									<dl id="page"></dl>
+								</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</section>
+			<!--隐藏部分-->
+			<div id="form">
+				<h1 id="h1">修改用户信息</h1>
+				<form action="data/admin/admin_alter.php" method="post" enctype="application/x-www-form-urlencoded">
+					<p>用户头像：<input type="text" name="avatar"></p>
+					<p>登录名称：<input type="text" name="uname"></p>
+					<p>用户姓名：<input type="text" name="user_name"></p>
+					<p>用户性别：<input type="text" name="gender"></p>
+					<p>用户邮箱：<input type="email" name="email"></p>
+					<p>用户手机：<input type="text" name="phone"></p>
+					<p><input type="hidden" name="uid"></p>
+					<p><input type="hidden" name="currentPage"></p>
+					<p class="sub">
+						<input type="submit" value="提交" class="btn">
+						<input type="reset" value="重置" class="btn">
+						<input type="button" value="取消" class="btn" onClick="javascript:location.reload();">
+					</p>
+				</form>
+			</div>
+			<script src="js/ajax.js"></script>
+			<script src="js/admin.js"></script>
+		</div>
+ </body>
+</html>

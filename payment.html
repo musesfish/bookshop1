@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-支付页面</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/payment.css">
+	</head>
+ <body>
+		<!--头部-->
+		<header id="header">
+			<!--<iframe src="header.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</header>
+		<!--主体-->
+		<div id="main">
+			<!--面包屑导航-->
+			<p id="bread_crumb">
+				您当前位置：
+				<a href="index.html">心灵驿站</a><span>&gt;</span>
+				<a href="cart.html">我的购物车</a><span>&gt;</span>
+				<a href="order_comfirm.html">订单确认页</a>
+			</p>
+			<!--2 页面主体-->
+			<section>
+			<!--2.1 状态-->
+				<div id="state">
+					<span class="shape"><b></b></span>
+					<span class="shape shape2"><b></b></span>
+					<span class="confirm">确认订单信息<b></b></span>
+					<span class="pay">支付订单<b></b></span>
+					<span class="succeed">支付完成</span>
+				</div>
+			<!--2.2 主体-->	
+				<div id="box">
+					<!--<div class="head clear">
+						<p class="lf">支付金额：<b>4800元</b></p>
+						<p class="rt">支付订单：<span>324235435 </span>收款方：心灵驿站商城</p>
+					</div>-->
+					<div class="body">
+						<p>网上银行支付</p>
+						<dl>
+							<dd>
+								<input type="radio" name="pay" value="1" checked>
+								<img src="img/pay/pay_img1.jpg" alt="pay_img1">
+							</dd>
+							<dd>
+								<input type="radio" name="pay" value="2">
+								<img src="img/pay/pay_img2.jpg" alt="pay_img1">
+							</dd>
+							<dd>
+								<input type="radio" name="pay" value="3">
+								<img src="img/pay/pay_img3.jpg" alt="pay_img1">
+							</dd>
+							<dd>
+								<input type="radio" name="pay" value="4">
+								<img src="img/pay/pay_img4.jpg" alt="pay_img1">
+							</dd>
+							<dd>
+								<input type="radio" name="pay" value="5">
+								<img src="img/pay/pay_img5.jpg" alt="pay_img1">
+							</dd>
+						</dl>
+					</div>
+					<!--<div class="foot">-->
+						<!--&lt;!&ndash;<p class="lf">剩余付款时间：<b>15：00</b></p>&ndash;&gt;-->
+						<!--<a class="rt" href="pay_success.html">确定付款</a>-->
+					<!--</div>-->
+				</div>
+			</section>
+		</div>
+		<!--尾部-->
+		<footer id="footer">
+			<!--<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</footer>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/payment.js"></script>
+ </body>
+</html>

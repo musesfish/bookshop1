@@ -1,0 +1,340 @@
+/*头部整体*/
+header{
+	/*width:100%;*/
+	width:1200px;
+	height:190px;
+	box-sizing:border-box;
+	/*border:1px solid red;*/
+	margin:0 auto;
+}
+/*顶部*/
+header .bg{
+	/*width:100%;*/
+	width:1200px;
+	background:#F9F9F9;
+	/*border:1px solid red;*/
+}
+#top{
+	margin:0 auto;
+	width:1200px;
+	height:30px;
+	line-height:30px;
+	box-sizing:border-box;
+	/*display:flex;*/
+	/*justify-content:space-between;*/
+	/*border:1px solid red;*/
+}
+#top a,#top span{
+	color:#636363;
+	padding:0 6px;
+	cursor:pointer;
+}
+	/*欢迎*/
+	#top p.welcome{float:left;}
+	
+	#top p b{
+		color:#E0E0E0;
+		font-size:inherit;
+	}
+	/*服务*/
+	#top div.server{
+	  float:right;
+		text-align:right;
+		position:relative;
+	}
+	#top div.server .phone{
+		background:transparent url("../img/header/icon_tablet.png") no-repeat;
+		background-size:contain;
+		padding-left:18px;
+	}
+	#top div.server .mybs{
+		background:transparent url("../img/header/arrow_carrot-up.png") no-repeat right;
+		background-size:contain;
+		padding-right:18px;
+	}
+/*底部*/
+.fixed_nav{
+	position:fixed;
+	top:-20px;
+	left:0;
+	right:0;
+	z-index:999;
+	background:#fff;
+	height:80px;
+	padding-bottom:0px;
+}
+#bottom{
+	margin:0 auto;
+	width:1200px;
+	height:150px;
+	padding-top:25px;
+	padding-bottom:25px;
+	box-sizing:border-box;
+	display:flex;
+	justify-content:space-between;
+}
+		/*左边*/
+		#bottom a.lside{
+			width:118px;
+			height:118px;
+			display:block;
+			cursor:pointer;
+			background:#fff url("../img/book_logo.png") no-repeat center -6px;
+			background-size:contain;
+			margin-left:25px;
+		}
+		/*右边*/
+		#bottom div.rside{
+			margin-top:20px;
+			width:865px;
+			display:flex;
+			justify-content:space-between;
+		}
+			/*搜索框*/
+			#bottom .rside>div .search{
+				border:2px solid #fe3227;
+				width:580px;
+				background:#fff url("../img/header/icon_search2.png") no-repeat right top;
+				background-size:contain;
+				cursor:pointer;
+				display:block;
+				position:relative;
+			}
+			#bottom .rside>div .search h2{
+				/*border:1px solid black;*/
+				z-index:99;
+				width:45px;
+				height:40px;
+				position:absolute;
+				top:0;
+				right:0;
+				background:transparent;
+			}
+			#bottom .rside>div .search input{
+				border:0;
+				outline:0;
+				height:42px;
+				padding-left:10px;
+				width:430px;
+				color:#636363;
+			}
+			#bottom .rside>div .search span{
+				color:#8A7575;
+				cursor:pointer;
+			}
+			#bottom .rside>div .search b{
+				background:#fff url("../img/header/arrow_triangle-down.png") no-repeat center center;
+				background-size:contain;
+				display:inline-block;
+				width:17px;
+				height:17px;
+				position:relative;
+				top:4px;
+				cursor:pointer;
+			}
+			/*热搜*/
+			#bottom .rside>div .hot{
+				width:580px;
+				margin:10px 0 25px;
+				background:#fff url("../img/header/gif-0616.gif") no-repeat left top;
+				padding-left:15px;
+			}
+			#bottom .rside>div .hot a{
+				font-weight:normal;
+				color:#8A7575;
+				padding:3px;
+			}
+			/*购物车我的订单*/
+			#bottom .rside>p{
+				line-height:42px;
+				font-size:16px;
+				text-align:center;
+				height:46px;
+				overflow:hidden;
+				/*display: flex;*/
+			}
+			#bottom .rside>p .cart{
+				background:#fe3227 url("../img/header/icon_cart_alt.png") no-repeat 5px 4px;
+				/*background-size:20%;*/
+				color:#fff;
+				min-width:85px;
+				border:2px solid #fe3227;
+				padding-left:28px;
+				cursor:pointer;
+			}
+            #bottom .rside>p span b.headCart{
+                display:inline-block;
+                max-width:65px;
+                vertical-align: top;
+                margin-left: 20px;
+                /*border: 1px solid yellow;*/
+            }
+            #bottom .rside>p span b.headCount{
+                text-overflow: ellipsis;
+                overflow: hidden;
+                max-width:40px;
+                display:inline-block;
+                white-space: nowrap;
+                float:right;
+                position:relative;
+                padding-right: 5px;
+                padding-left: 5px;
+                /*left:-10px;*/
+                /*border: 1px solid green;*/
+            }
+            #bottom .rside>p span b.headCount:hover{
+                overflow: visible;
+                color: yellow;
+            }
+			#bottom .rside>p .order{
+				border:2px solid #D7D7D7;
+				border-left:2px solid #fe3227;
+				width:92px;
+				color:#636363;
+			}
+.rrside{
+    position: relative;
+    /*border: 1px solid red;*/
+}
+.searul{
+    /*border: 1px solid red;*/
+	position: absolute;
+	top: 48px;
+	left: 0;
+	background: #fff;
+	width: 530px;
+	display: none;
+	box-sizing: border-box;
+    transition: all .5s linear;
+    z-index: 999;
+    /*overflow: hidden;*/
+}
+.searul li{
+	padding-left:8px;
+	display: inline-block;
+	/*border:1px solid red;*/
+	width: 530px;
+	height: 28px;
+    line-height: 28px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.searul li:hover{
+	background: #fe3227;
+    color: white;
+}
+.searul li span{
+	display: inline-block;
+	cursor: pointer;
+    padding-right: 10px;
+    float:right;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#txtSearch{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#allsort{
+	z-index: 9999;
+	background:#fff;
+    position: absolute;
+    left:449px;
+    border-radius: 0 0 3px 3px;
+    color:#487a6f;
+    border: 1px solid #fe3227;
+    border-top: 0px;
+    display: none;
+    transition: all .5s linear;
+}
+#allsort li{
+    height:28px;
+    line-height: 28px;
+    padding:0 15px;
+    cursor: pointer;
+    text-align: center;
+}
+#allsort li:hover{
+    background: #fe3227;
+    color: white;
+}
+
+.sort{
+    z-index: 9998;
+    background:#fff;
+    position: absolute;
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #fe3227;
+    width: 165px;
+    transition: all .5s linear;
+}
+.sort li{
+    float: left;
+    display-play:inline-block;
+    height:28px;
+    line-height: 28px;
+    padding:0 15px;
+    cursor: pointer;
+}
+.sort li:hover{
+    color: #fe3227;
+}
+
+#educate{
+    left:528px;
+    top:47px;
+    display: none;
+}
+#literature{
+    left:528px;
+    top:76px;
+    display: none;
+}
+#child{
+    left:528px;
+    top:104px;
+    display: none;
+}
+#life{
+    left:528px;
+    top:76px;
+    display: none;
+}
+#social{
+    left:528px;
+    top:116px;
+    display: none;
+}
+#manage{
+    left:528px;
+    top:188px;
+    display: none;
+}
+#science{
+    left:528px;
+    top:188px;
+    display: none;
+}
+#dropdown{
+    position: absolute;
+		right:70px;
+    top:30px;
+    background: #fff;
+    z-index: 9999;
+    cursor: pointer;
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 1px 1px 1px #F9F9F9;
+    transition:all .5s linear;
+    display: none;
+		/*border:1px solid red;*/
+}
+#dropdown li{
+    padding:0 10px;
+    border-radius: 0 0 3px 3px;
+}
+#dropdown li:hover{
+    background: #fe3227;
+    color: white;
+}

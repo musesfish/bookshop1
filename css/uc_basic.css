@@ -1,0 +1,333 @@
+/*面包屑导航*/
+#bread_crumb{
+	height:36px;
+	padding-top:10px;
+}
+#bread_crumb a{
+	color:#636363;
+	padding-right:3px;
+}
+/* 盒子 */
+#box{
+	width:1200px;
+	display:flex;
+	justify-content:center;
+	margin:10px;
+}
+/* 侧边 */
+#box aside{
+	width:161px;
+	margin-right:40px;
+    margin-top:40px;
+}
+#box aside dl{
+	margin-bottom:20px;
+	background:#fff;
+    position: relative;
+}
+#box aside dl b{
+    display: block;
+    /*background: #fff;*/
+    z-index: 9;
+    opacity: 0.1;
+    height:38px;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#box aside dt{
+	/*background:#fe3227;*/
+    border:1px solid #fe3227;
+	height:38px;
+	/*color:#fff;*/
+    color:#fe3227;
+	font-size:14px;
+	line-height:38px;
+	padding:0 6px;
+	text-align:center;
+	cursor:pointer;
+	border-radius:3px;
+}
+#box aside dt:hover{background:#ffeded;}
+#box aside dt.hover{background:#ffeded;}
+#box aside dt span{
+	padding:0 10px;
+}
+#box aside dt img{
+	vertical-align:middle;
+}
+#box aside dd{
+	height:38px;
+	text-align:center;
+	line-height:38px;
+}
+/* 主体 */
+#box section{
+	width:838px;
+	background:#fff;
+}
+/*头*/
+#box section>p{
+	background-image:linear-gradient(to top,#E7E7E6 0%,#F5F5F5 100%);
+	height:38px;
+	font-size:15px;
+	line-height:38px;
+}
+#box section>p a.active{
+	font-weight:bold;
+}
+#box section>p a{
+	padding:0 22px;
+	color:#333;
+}
+/*身*/
+#box section #myform{
+	padding:20px 20px 80px;
+	font-size:13px;
+}
+#box section #myform p{
+	height:58px;
+	line-height:58px;
+	border-bottom:1px solid #ddd;
+	padding:5px 10px;
+}
+#box section #myform p span{
+	text-align:right;
+	display:inline-block;
+	width:100px;
+}
+#box section #myform p input{
+	height:30px;
+	width:156px;
+	border:1px solid #ddd;
+	outline:0;
+	/*font-size:15px;*/
+    font:12px arial,\5b8b\4f53,georgia,verdana,helvetica,sans-serif;
+    color:#636363;
+    padding-left: 5px;
+}
+#box section #myform #btn_save{
+	height:46px;
+	width:134px;
+    line-height: 46px;
+    text-align: center;
+	border:1px solid #ff2f2f;
+	outline:0;
+	/*background-image:linear-gradient(to top,#f20b16,#ff2f2f);*/
+	/*color:white;*/
+	border-radius:3px;
+	margin-top:20px;
+	margin-left: 35px;
+	font-size:15px;
+	/*font-weight:bold;*/
+	cursor:pointer;
+	/*background:#ffeded;*/
+	background:#fff;
+	color:#ff2f2f;
+    display: inline-block;
+}
+#box section #myform #btn_save:hover{
+	background-image:linear-gradient(to top,#f20b16,#ff2f2f);
+	color:white;
+}
+#box section #myform img{
+	border:1px solid #ead4c6;
+	border-radius:5px;
+	width:65px;
+}
+#box section #myform p:first-child{
+	padding-bottom:20px;
+}
+#box section #myform p:first-child img{
+	border:1px solid #ead4c6;
+	border-radius:5px;
+	width:65px;
+}
+#box section #myform p:first-child a{
+	font-size:12px;
+	color:#636363;
+	padding-left:25px;
+	font-weight:bold;
+}
+#box section #myform #boy{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	/*background:url('../img/uc_basic/select.png') no-repeat center center;*/
+	margin-right:5px;
+}
+.un_select{
+    background:url('../img/uc_basic/un_select.png') no-repeat center center;
+}
+.select{
+    background:url('../img/uc_basic/select.png') no-repeat center center;
+}
+#box section #myform #girl{
+	display:inline-block;
+	width:12px;
+	height:12px;
+	/*background:url('../img/uc_basic/un_select.png') no-repeat center center;*/
+	margin:0 5px 0 20px;
+}
+@keyframes slide-down-up{
+	0%{
+		top:0px;
+	}
+	40%{
+		top:66px;
+	}
+	60%{
+		top:100px;
+	}
+	80%{
+		top:66px;
+	}
+	100%{
+		top:100px;
+	}
+}
+@keyframes slide-down{
+	0%{
+		top:200px;
+	}
+	100%{
+		top:230px;
+	}
+}
+#keyframe{
+	margin:0 auto;
+	width:500px;
+	height:300px;
+	padding:50px;
+	position:relative;
+}
+#keyframe p{
+	font-size:20px;
+	color:#CFCFCF;
+	position:absolute;
+	top:230px;
+	left:180px;
+	animation:slide-down 1s ease-in;
+}
+#keyframe img{
+	animation:slide-down-up 1s ease-in;
+	position:absolute;
+	top:100px;
+	left:255px;
+}
+#address>div{
+    margin-top: 10px;
+    background:snow;
+    padding: 10px;
+}
+#address>div p{
+    padding: 5px 10px;
+    clear: both;
+}
+#address>div p.code{
+    border-bottom: 1px dotted #636363;
+    padding-bottom:10px;
+}
+#address>div p input{
+    border:0;
+    outline: 0;
+    background:transparent;
+    font:12px arial,\5b8b\4f53,georgia,verdana,helvetica,sans-serif;
+    color:#636363;
+    width: auto;
+    vertical-align: middle;
+}
+#address>div p a{
+    padding-top:10px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#address>p a.add{
+    float: right;
+    display: block;
+    border: 1px solid #ff2f2f;
+    border-radius: 5px;
+    width: 100px;
+    height:32px;
+    text-align: center;
+    line-height: 32px;
+    background:#fff;
+    color:#ff2f2f;
+    margin-top: 10px;
+}
+#address>p a.add:hover{
+    background:#ffeded;
+}
+
+.drag_upload{
+    box-sizing: border-box;
+    overflow:hidden;
+    width:320px;
+    height:320px;
+    position:absolute;
+    top: 150px;
+    left: 550px;
+    z-index:9999;
+    background: #fff;
+    box-shadow: 0 2px 2px 2px #f3f3f3;
+    border-radius:10px;
+    cursor: move;
+}
+#upload{
+    display: none;
+}
+#upload h2,#add-address h2{
+    text-align: center;
+    padding: 10px;
+    background: #fe3227;
+    color: white;
+    position: relative;
+}
+#upload form p,#add-address form p{
+    padding-left: 15px;
+    padding-top:15px;
+}
+#upload form div{
+    margin:20px auto 0;
+    border:1px solid silver;
+    width: 150px;
+    height:150px;
+    text-align: center;
+    line-height: 150px;
+}
+#btn_sub,#btn_res,#btn_sub_address,#btn_res_address{
+    padding:5px 10px;
+    background: #fe3227;
+    color: white;
+    float:right;
+    margin-right: 20px;
+    margin-top:10px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add-address{
+    display:none;
+    height:390px;
+    width:360px;
+}
+#add-address p{
+    text-align: right;
+    display:block;
+    width:250px;
+    height:20px;
+    margin-left:20px;
+    /*border:1px solid red;*/
+}
+#bg-mask{
+    background: #eee;
+    /*background: red;*/
+    opacity: 0.3;
+    z-index: 8888;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+

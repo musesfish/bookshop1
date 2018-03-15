@@ -1,0 +1,77 @@
+/*设置页面通用样式*/
+body{
+	font:12px arial,\5b8b\4f53,georgia,verdana,helvetica,sans-serif;
+	color:#636363;
+	margin:0;
+	padding:0;
+	background:#fff;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,pre{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+a{
+	color:#0b6dc6;
+	text-decoration:none;
+}
+a:hover{
+	color:#1c87e8;
+}
+img{
+	vertical-align:middle;
+}
+/*//autocomplete="off"*/
+input:-webkit-autofill{
+	-webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+/*浮动让父元素失去高度*/
+.float:after{
+	content:"";
+	display:table;
+	clear:both;
+}
+/*父元素的第一个子元素外边距溢出*/
+.table:before{
+	content:"";
+	display:table;
+}
+.lf{
+	float:left; 
+}
+.rt{
+	float:right;
+}
+.clear{
+	clear:both;
+}
+#main{
+	width:1200px;
+	margin:0 auto;
+}
+/*#header iframe{*/
+	/*width:100%;*/
+	/*height:190px;*/
+/*}*/
+/*#footer iframe{*/
+	/*width:100%;*/
+	/*height:200px;*/
+/*}*/
+/*#header{width:1360px;}*/
+/*#footer{width:1360px;}*/
+/*返回顶部*/
+#totop{
+	width:53px;
+	height:119px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	position:fixed;
+	/*top:508px;*/
+	bottom:0;
+	right:0;
+	z-index:99;
+	cursor:pointer;
+	visibility:hidden;
+	transition: all .3s linear;
+}

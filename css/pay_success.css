@@ -1,0 +1,34 @@
+section{
+	width:580px;
+	height:380px;
+	margin:0 auto;
+	background:url("../img/pay/success.png") no-repeat 40px 80px;
+	background-size:16%;
+	padding-left:200px;
+	padding-top:80px;
+	box-sizing:border-box;
+}
+section h2{
+	font:30px 'microsoft yahei';
+	color:#333;
+	margin-bottom:20px;
+}
+section p{
+	margin-bottom:20px;
+	font-size:16px;
+}
+section p b{
+	color:#fe3227;
+}
+section p span{
+	padding-right:50px;
+}
+section p a{
+	color:#3ab572;
+	padding-right:50px;
+	line-height:24px;
+}
+section p a:hover{
+	color:#fe3227;
+	text-decoration:none;
+}

@@ -1,0 +1,602 @@
+/*容器*/
+	#container{
+		display:flex;
+		width:1200px;
+		justify-content:space-between;
+	}
+/*侧边*/
+	aside{
+		width:250px;
+		display:flex;
+		flex-direction:column;
+	}
+	/*分类*/
+		aside .classify{
+			width:195px;
+			height:640px;
+			border:1px solid #487a6f;
+			border-radius:3px;
+			margin:0 auto;
+		}
+		aside .classify dt{
+			background:#487a6f;
+			height:36px;
+			text-align:center;
+			line-height:36px;
+			font-size:16px;
+			border-bottom:1px dotted #fff;
+			cursor:pointer;
+			margin-bottom:10px;
+		}
+		aside .classify dt a{
+			color:white;
+		}
+		aside .classify dd{
+			padding:0 12px 0 8px;;
+		}
+		aside .classify dd a:first-child{
+			display:block;
+			background:#fff url("../img/index/arrow_carrot-up.png") no-repeat right center;
+			background-size:10%;
+			height:28px;
+			line-height:28px;
+			font-weight:bold;
+			color:#487a6f;
+			cursor:pointer;
+		}
+		aside .classify dd a:last-child{
+			letter-spacing:2px;
+			display:inline-block;
+			width:168px;
+			line-height:24px;
+			color:#636363;
+			border-bottom:1px dotted #487a6f;
+			padding-bottom:5px;
+			margin-bottom:5px;
+		}
+		aside .classify dd a.bottom{
+			border-bottom:0;
+		}
+	/*二维码*/
+		aside .code{
+			width:250px;
+			height:221px;
+			background:#fbfbfb;
+			margin-top:46px;
+			background:#fbfbfb url("../img/product_details/code.jpg") no-repeat center 56px;
+			text-align:center;
+			padding-top:20px;
+		}
+	/*排行版*/
+		aside .rank{
+			width:250px;
+			margin-top:14px;
+			margin-bottom:22px;
+		}
+		aside .rank>span{
+			margin-left:14px;
+		}
+		aside .rank>ul{
+			border:1px solid #c8c3c3;
+			margin:11px;
+			border-radius:3px;
+			overflow:hidden;
+		}
+		aside .rank>ul a{
+			color:#636363;
+		}
+		aside .rank>ul li{
+			border-bottom:1px solid #c8c3c3;
+			height:35px;
+			line-height:35px;
+			padding:9px;
+		}
+		aside .rank>ul li.active{
+			height:122px;
+			position:relative;
+		}
+		aside .rank>ul li.active div{
+			height:97px;
+			line-height:normal;
+			position:absolute;
+			top:30px;
+			right:5px;
+			/*border:1px solid red;*/
+			width:100px;
+		}
+		aside .rank>ul li.active b{
+			color:#f39214;
+			font-size:14px;
+			display:block;
+			margin-top:20px;
+		}
+		aside .rank>ul li.active>a{
+			position:absolute;
+			top:10px;
+			left:30px;
+			z-index:-1;
+		}
+		aside .rank>ul li.active div a{
+			font-weight:bold;
+			color:#333;
+			font-size:14px;
+			display:inline-block;
+			margin-bottom:8px;
+		}
+		aside .rank>ul li.active img{
+			/*height:87px;*/
+			width:88px;
+			margin-top:20px;
+		}
+		aside .rank>ul li span.top{
+			border-radius:50%;
+			background:#01c198;
+			height:24px;
+			width:24px;
+			margin-top:9px;
+			text-align:center;
+			line-height:24px;
+			color:#fff;
+		}
+		aside .rank>ul li span:first-child{
+			float:left;
+			margin-right:8px;
+		}
+		aside .rank>ul li span:last-child{
+			float:right;
+		}
+		aside .rank>ul li:last-child{
+			background:#fdfdfd;
+			border:0;
+		}
+		aside .rank>ul li:last-child a{
+			padding-left:80px;
+		}
+	/*小广告*/
+		aside .ad{
+			width:250px;
+			height:425px;
+		}
+		aside .ad dd img{
+			width:250px;
+			margin-bottom:19px;
+		}
+/*主体*/
+	#products{
+		width:920px;
+		display:flex;
+		flex-direction:column;
+	}
+	/*面包屑导航*/
+		#bread_crumb{
+			height:36px;
+			padding-top:10px;
+		}
+		#bread_crumb a{
+			color:#636363;
+			padding-right:3px;
+		}
+	/*产品详情*/
+		#product_details{
+			height:380px;
+			width:920px;
+			box-sizing:border-box;
+			margin-bottom:32px;
+			display:flex;
+			justify-content:space-between;
+		}
+		/*预览图*/
+			#product_details .preview{
+				width:270px;
+				position:relative;
+			}
+			#product_details .preview #middleMask{
+				position:absolute;
+				top:0;
+				left:0;
+				border:1px solid #c8c3c3;
+				width:270px;
+				height:366px;
+				text-align:center;
+				/*line-height:365px;*/
+				overflow:hidden;
+				background:transparent;
+				z-index:9;
+				cursor:move;
+			}
+			#product_details .preview p img{
+				width:270px;
+				height:270px;
+				margin-top:43px;
+				/*border:1px solid red;*/
+			}
+			#product_details .preview #mask{
+				width:135px;
+				height:183px;
+				position:absolute;
+				top:0;
+				left:0;
+				background:#F5F5F5;
+				opacity:0.6;
+				display:none;
+			}
+			#product_details .preview #superMask{
+				border:1px solid #c8c3c3;
+				width:270px;
+				height:366px;
+				position:absolute;
+				left:280px;
+				top:0;
+				background-color:#fff;
+				background-size:540px 540px;
+				/*background-position:0 86px;*/
+				background-repeat:no-repeat;
+				display:none;
+			}
+		/*产品描述*/
+		#product_details .show_details{
+			width:600px;
+			display:flex;
+			justify-content:space-between;
+			flex-direction:column;
+			overflow:hidden;
+		}
+		#product_details .show_details h2{
+			color:#333;
+		}
+		#product_details .show_details .details{
+            text-overflow: ellipsis;
+            overflow: hidden;
+            max-width:550px;
+            display:inline-block;
+            white-space: nowrap;
+		}
+		/*#product_details .show_details .details:hover{*/
+			/*height:32px;*/
+		/*}*/
+		#product_details .show_details .price{
+			border-top:1px dotted #b0a2a2;
+			border-bottom:1px dotted #b0a2a2;
+			width:661px;
+			height:95px;
+			background:#f5f5f5;
+			padding:16px 12px;
+			box-sizing:border-box;
+		}
+		#product_details .show_details .price p:first-child span{
+			color:#e85512;
+		}
+		#product_details .show_details .price p:first-child b{
+			color:#e85512;
+			font-size:16px;
+		}
+		#product_details .show_details .price a{
+			color:#636363;
+		}
+		#product_details .show_details .price p:first-child i{
+			font-style:normal;
+			padding-left:160px;
+		}
+		#product_details .show_details .price p:last-child{
+			padding-top:20px;
+		}
+		#product_details .show_details .price p:last-child a{
+			padding-left:20px;
+			text-decoration:underline;
+		}
+		#product_details .show_details .price p:last-child b{
+			font-weight:normal;
+		}
+		#product_details .show_details .btn a{
+			display:inline-block;
+			width:134px;
+			height:38px;
+			border:1px solid red;
+			margin-right:16px;
+			text-align:center;
+			line-height:38px;
+			font-size:14px;
+			margin-top:10px;
+			border-radius:3px;
+			cursor:pointer;
+		}
+		#product_details .show_details .btn a:first-child{
+			background:#ffeded;
+			color:#ff2f2f;
+		}
+		#product_details .show_details .btn a:nth-child(2){
+			background-image:linear-gradient(to top,#f20b16,#ff2f2f);
+			color:white;
+		}
+		#product_details .show_details .btn a:last-child{
+			border:1px solid #b0a2a2;
+			color:#636363;
+		}
+		#product_details .show_details .btn a:hover{
+			background:#ff2f2f;
+			color:white;
+			border:1px solid transparent;
+		}
+	/*为你推荐*/
+		#products .recommend{
+			height:330px;
+			overflow:hidden;
+			font-weight:bold;
+			width:920px;
+		}
+		#products .recommend p{
+			border:1px solid #c8c3c3;
+			width:920px;
+			height:42px;
+			line-height:42px;
+			background:#f5f5f5;
+			font-size:14px;
+			padding-left:28px;
+			box-sizing:border-box;
+		}
+		#products .autoplay{
+			width:920px;
+			height:240px;
+			margin:0 auto;
+		}
+		#products .autoplay dl{
+			display:flex;
+			justify-content:space-between;
+			height:190px;
+			width:893px;
+			transition:all .5s linear;
+		}
+		#products .autoplay dl dt{
+			width:70px;
+			display:flex;
+			flex-direction:column;
+			justify-content:center;
+		}
+		#products .autoplay dl dt span{
+			border:1px solid #ac9f9f;
+			width:16px;
+			height:34px;
+			margin:0 auto;
+			border-radius:3px;
+			cursor:pointer;
+		}
+		#products .autoplay dl dt #pre{
+			background:#fff url("../img/index/arrow_carrot-up1.png") no-repeat center center;
+		}
+		#products .autoplay dl dt #next{
+			background:#fff url("../img/index/arrow_carrot-up2.png") no-repeat center center;
+		}
+		#products .autoplay dl dt #pre:hover{
+			background-color:#f3f3f3;
+		}
+		#products .autoplay dl dt #next:hover{
+			background-color:#f3f3f3;
+		}
+		#products .autoplay dl dd{
+			width:237px;
+			height:200px;
+			display:flex;
+			border-left:1px solid #c8c3c3;
+			flex-direction:column;
+			justify-content:space-between;
+			text-align:center;
+			margin:21px auto;
+		}
+		#products .autoplay dl dd:nth-child(2){
+			border-left:0px;
+		}
+		#products .autoplay dl dd img{
+			width:130px;
+			cursor:pointer;
+			margin:0 auto;
+		}
+		#products .autoplay dl dd span.price{
+			font-size:14px;
+			color:#fe4902;
+			font-weight:bold;
+		}
+		#products .autoplay dl dd a{
+			width:150px;
+			margin:0 auto;
+			height:14px;
+			overflow:hidden;
+		}
+		#products .autoplay dl dd a:hover{
+			overflow:visible;
+		}
+		#products .recommend ul{
+			height:28px;
+			width:920px;
+			margin:0 auto;
+			text-align:center;
+		}
+		#products .recommend ul li{
+			width:18px;
+			height:4px;
+			display:inline-block;
+			background:#d7d7d7;
+			margin-right:12px;
+			cursor:pointer;
+		}
+		#products .recommend ul li.active{
+			background:#28a79e;
+		}
+	/*读书简介*/
+		#products .summary{
+			height:152px;
+			width:920px;
+		}
+		#products .summary>p{
+			border:1px solid #c8c3c3;
+			width:920px;
+			height:42px;
+			background:#f5f5f5;
+		}
+		#products .summary>p a{
+			padding:0 62px;
+			line-height:42px;
+			font-size:14px;
+			display:inline-block;
+			font-weight:bold;
+			color:#636363 ;
+			cursor: pointer;
+		}
+		#products .summary>p a.selected{
+			display:inline-block;
+			color:#00c29a;
+			background:#fff;
+			border-top:2px solid #00c29a;
+			border-right:1px solid #c8c3c3;
+			border-left:1px solid #fff;
+			position:relative;
+			right:1px;
+		}
+		#products .summary .content{
+			width:892px;
+			margin-top:25px;
+			line-height:24px;
+		}
+		/*#products .summary .content:after{*/
+			/*content:"《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。";*/
+			/**/
+		/*}*/
+	/*目录*/
+		#products .catalog{
+			width:920px;
+		}
+		#products .catalog>p{
+			border-bottom:2px solid #00bf94;
+		}
+		#products .catalog>p span{
+			width:92px;
+			height:35px;
+			color:#fff;
+			background:#00bf94;
+			border-radius:0 5px 0 0;
+			display:inline-block;
+			font-size:14px;
+			text-align:center;
+			line-height:35px;
+		}
+		#products .catalog>p a{
+			float:right;
+			color:#636363;
+			margin-top:10px;
+			width:44px;
+			background:url("../img/product_details/arrow_carrot-up.png") no-repeat 24px 0px;
+			background-size:17px 17px;
+		}
+		#products .catalog ul{
+			padding:30px 0;
+			line-height:24px;
+		}
+	/*累计评论*/
+		#products .cumulative_comment{
+			width:920px;
+		}
+		#products .cumulative_comment>p{
+			border-bottom:2px solid #00bf94;
+			height:35px;
+		}
+		#products .cumulative_comment>p span{
+			width:92px;
+			height:35px;
+			color:#fff;
+			background:#00bf94;
+			border-radius:0 5px 0 0;
+			display:inline-block;
+			font-size:14px;
+			text-align:center;
+			line-height:35px;
+			padding:0 10px;
+		}
+		#products .cumulative_comment>p a{
+			float:right;
+			border:1px solid #c8c3c3;
+			width:77px;
+			height:26px;
+			border-radius:5px;
+			line-height:26px;
+			text-align:center;
+			color:#636363;
+		}
+		#products .cumulative_comment dl dd{
+			border-bottom:1px dotted #c8c3c3;
+			padding:18px 20px;
+			display:flex;
+		}
+		#products .cumulative_comment dl dd div:first-child p.author{
+			padding-left:10px;
+			padding-top:10px;
+		}
+		#products .cumulative_comment dl dd div:first-child p.time{
+			padding-top:5px;
+			color:#c8c3c3;
+			padding-left:5px;
+		}
+		#products .cumulative_comment dl dd div:first-child p.headimg{
+			width:58px;
+			height:58px;
+			border-radius:50%;
+			/*background:url("../img/product_details/book_logo.png") no-repeat center center;*/
+			/*background-size:cover;*/
+			margin-right:26px;
+			border:1px dotted #c8c3c3;
+            overflow: hidden;
+		}
+        #products .cumulative_comment dl dd div:first-child p.headimg img{
+            width: 58px;
+        }
+		#products .cumulative_comment dl dd div:nth-child(2) p.view{
+            margin-top: 30px;
+			padding-right:10px;
+		}
+		#products .cumulative_comment dl dd div:nth-child(2) p.view_btn{
+			width:98px;
+			height:28px;
+			float:right;
+			margin-left:30px;
+			margin-top:5px;
+		}
+		#products .cumulative_comment dl dd div:nth-child(2) p.view_btn a.comments{
+			display:inline-block;
+			width:22px;
+			height:22px;
+			background:url("../img/product_details/1_11.gif") no-repeat 0 3px;
+			display:inline-block;
+			margin-right:5px;
+		}
+		#products .cumulative_comment dl dd div:nth-child(2) p.view_btn span{
+			margin-right:15px;
+			position:relative;
+			top:-5px;
+		}
+		#products .cumulative_comment dl dd div:nth-child(2) p.view_btn a.collection{
+			display:inline-block;
+			width:22px;
+			height:22px;
+			background:url("../img/product_details/1_01.gif") no-repeat;
+			display:inline-block;
+			margin-right:5px;
+		}
+	/*发表评论*/
+		#products .comment{
+			width:920px;
+			margin-top:30px;
+		}
+		#products .comment textarea{
+			width:898px;
+			height:210px;
+			margin:10px 0;
+			padding:10px;
+		}
+		#products .comment a{
+			float:right;
+			border:1px solid #c8c3c3;
+			width:77px;
+			height:26px;
+			border-radius:5px;
+			line-height:26px;
+			text-align:center;
+			color:#636363;
+		}

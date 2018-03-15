@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-个人中心</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/uc_basic.css">
+	</head>
+ <body>
+		<!--头部-->
+		<header id="header">
+			<!--<iframe src="header.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</header>
+		<!--主体-->
+		<div id="main">
+			<!--2 页面主体-->
+			<!--面包屑导航-->
+			<p id="bread_crumb">
+				您当前位置：
+				<a href="index.html">心灵驿站</a><span> &gt;</span>
+				<a href="#">个人中心</a>
+			</p>
+			<!--盒子-->
+			<div id="box">
+				<!--侧边-->
+				<aside id="uc_aside">
+					<dl id="basic">
+						<dt>
+							<img src="img/uc_basic/myOrder.png" alt="myOrder">
+							<span>我的信息</span>
+							<img src="img/uc_basic/myOrder1.png" alt="myOrder1">
+                            <b></b>
+						</dt>
+						<!--<dd>全部订单</dd>
+						<dd>待付款</dd>
+						<dd>待收货</dd>
+						<dd>待评价</dd>
+						<dd>退款退货</dd>-->
+					</dl>
+					<dl id="discount">
+						<dt>
+							<img src="img/uc_basic/pcenter_icon1.png" alt="myOrder">
+							<span>专属优惠</span>
+							<img src="img/uc_basic/myOrder1.png" alt="myOrder1">
+                            <b></b>
+						</dt>
+					</dl>
+					<dl id="addresses">
+						<dt>
+							<img src="img/uc_basic/pcenter_icon2.png" alt="myOrder">
+							<span>收货地址</span>
+							<img src="img/uc_basic/myOrder1.png" alt="myOrder1">
+                            <b></b>
+						</dt>
+					</dl>
+					<dl id="collect">
+						<dt>
+							<img src="img/uc_basic/pcenter_icon3.png" alt="myOrder">
+							<span>我的收藏</span>
+							<img src="img/uc_basic/myOrder1.png" alt="myOrder1">
+                            <b></b>
+						</dt>
+					</dl>
+				</aside>
+				<!--主体-->
+				<section style="display:none" data-id="basic">
+					<!--<p>-->
+						<!--<a href="#" class="active">我的信息</a>-->
+						<!--&lt;!&ndash;<a href="#">个人头像</a>-->
+						<!--<a href="#">安全管理</a>&ndash;&gt;-->
+					<!--</p>-->
+					<!--<form action="#">-->
+						<!--<p>-->
+							<!--<span>我的头像：</span>-->
+							<!--<img src="img/uc_basic/book_logo.png" alt="user50">-->
+							<!--<a href="#">更改头像</a>-->
+						<!--</p>-->
+						<!--<p>-->
+							<!--<span>用户名：</span>-->
+							<!--<input type="text">-->
+						<!--</p>-->
+						<!--<p class="sex">-->
+							<!--<span>性别：</span>-->
+							<!--<a href="#" id="boy"></a>男-->
+							<!--<a href="#" id="girl"></a>女-->
+						<!--</p>-->
+						<!--<p>-->
+							<!--<span>绑定电话：</span>-->
+							<!--<input type="text">-->
+						<!--</p>-->
+						<!--<p>-->
+							<!--<span>绑定邮箱：</span>-->
+							<!--<input type="text">-->
+						<!--</p>-->
+						<!--<button>保存更改</button>-->
+					<!--</form>-->
+				</section>
+				<section style="display:none" data-id="discount">
+					<p>
+						<a href="#" class="active">专属优惠</a>
+					</p>
+                    <div id="keyframe">
+                        <img src="img/lookforward/lookforward_img1.png" alt="lookforward_img1">
+                        <p>暂无优惠活动 敬请期待!!</p>
+                    </div>
+				</section>
+                <section style="display:none" data-id="addresses">
+                    <p>
+                        <a href="#" class="active">收货地址</a>
+                    </p>
+                    <div id="address">
+                        <!--<div id="1">
+                            <p>
+                                收货人姓名：<input type="text" value="小明" name="uname" disabled/>
+                                收货人手机：<input name='phone' type="text" value="12345678909" disabled/>
+                            </p>
+                            <p>
+                                省份：<input type="text" name="province" value="广东" disabled/>
+                                市级：<input type="text" name="city" value="广州" disabled/>
+                                区域：<input type="text" name="county" value="天河" disabled/>
+                                门牌号：<input type="text" name="address" value="大众路99号" disabled/>
+                            </p>
+                            <p class="code">
+                                邮编：<input type="text" name="postcode" value="51000" disabled/>
+                                <label for="default" class="address"><input type="checkbox" id="default" disabled checked/>默认地址</label>
+                            </p>
+                            <p>
+                                <a href="#">编辑</a>
+                                <a href="#">删除</a>
+                            </p>
+                        </div>
+                        <div id="2">
+                            <p>
+                                收货人姓名：<input type="text" value="小明" name="uname" disabled/>
+                                收货人手机：<input name='phone' type="text" value="12345678909" disabled/>
+                            </p>
+                            <p>
+                                省份：<input type="text" name="province" value="广东" disabled/>
+                                市级：<input type="text" name="city" value="广州" disabled/>
+                                区域：<input type="text" name="county" value="天河" disabled/>
+                                门牌号：<input type="text" name="address" value="大众路99号" disabled/>
+                            </p>
+                            <p class="code">
+                                邮编:<input type="text" name="postcode" value="51000" disabled/>
+                                <label for="default2" class="address"><input type="checkbox" id="default2" disabled/>设为默认</label>
+                            </p>
+                            <p>
+                                <a href="#">编辑</a>
+                                <a href="#">删除</a>
+                            </p>
+                        </div>-->
+                        <p id="addadrs"><a href="#" class="add">新增收货地址</a></p>
+                    </div>
+                </section>
+            </div>
+
+			<!-- 遮罩层-->
+            <div id="bg-mask"></div>
+            <!-- 上传头像 -->
+            <div id="upload" class="drag_upload">
+                <h2>上传头像</h2>
+                <form  id="form-avatar" method="post">
+                    <p id="freader">
+                        <input type="file" id="avatar" name="avatar"/>
+                    </p>
+                    <div id="drag-img">
+                        请将图片拖拽到此区域
+                        <!--<img src="img/avatar/default.png" id="img_review" width="120"/>-->
+                    </div>
+                    <p>
+                        <input id="btn_sub" type="submit" value="提交"/>
+                        <input id="btn_res" type="reset" value="取消"/>
+                    </p>
+                </form>
+            </div>
+
+            <!-- 添加地址 -->
+            <div id="add-address" class="drag_upload">
+                <h2>添加地址</h2>
+                <form  id="form-address" method="post">
+                    <p>收货人姓名：<input type="text" name="receiver"/></p>
+                    <p>收货人手机：<input type="text" name="cellphone"/></p>
+                    <p>邮编：<input type="text" name="postcode"/></p>
+                    <p>省份：<input type="text" name="province"/></p>
+                    <p>市级：<input type="text" name="city"/></p>
+                    <p>区域：<input type="text" name="county"/></p>
+                    <p>门牌号：<input type="text" name="address"/></p>
+                    <p><input type="checkbox" id="is_default"/> 设为默认地址</p>
+                    <p class="btn">
+                        <input id="btn_sub_address" type="submit" value="提交"/>
+                        <input id="btn_res_address" type="reset" value="取消"/>
+                    </p>
+                </form>
+            </div>
+
+        </div>
+		<!--尾部-->
+		<footer id="footer">
+			<!--<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</footer>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/uc_basic.js"></script>
+ </body>
+</html>

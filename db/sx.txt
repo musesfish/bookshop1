@@ -1,0 +1,27 @@
+你的 PHP MySQL 库版本 5.1.73 和你的 MySQL 服务器版本 5.6.23 不同。这可能造成一些未知的问题。
+主库地址	w.rdc.sae.sina.com.cn
+从库地址	r.rdc.sae.sina.com.cn
+端口	3306 原端口3307也可以使用，建议使用3306
+数据库名	app_smy1993
+用户名	5lky5oo0oo隐藏
+密码	wh0zz355zkxlx4lk0504why0i4l44kk3kw1mm2xj隐藏
+
+header('Access-Control-Allow-Origin:*');
+header('Access-Control-Allow-Origin:http://localhost:3000');
+header('Access-Control-Allow-Credentials:true');
+
+header('Access-Control-Allow-Origin:*');
+
+header('Access-Control-Allow-Headers:X-Requested-With');
+
+header('Access-Control-Allow-Methods:GET,POST,OPTIONS,DELETE');
+
+
+作者：H大仙
+链接：https://www.zhihu.com/question/26777760/answer/45365639
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+手机浏览器和PC浏览器的核心不同,因此xmlhttp对象的创建方式也不同,手机上无法执行ajax请求,很可能是xmlhttp对象创建失败造成的
+
+

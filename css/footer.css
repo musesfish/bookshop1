@@ -1,0 +1,54 @@
+/*尾部整体*/
+#foot{
+	/*width:100%;*/
+	width:1200px;
+	border-top:2px solid #FF2832;
+	height:200px;
+	background:#FAFAFA;
+	box-sizing:border-box;
+	padding-top:20px;
+	/*border:1px solid red;*/
+	margin:30px auto 0;
+}
+/*顶部*/
+#foot>div{
+	width:1000px;
+	margin:0 auto;
+	/*position:absolute;*/
+	/*top:0;*/
+	/*left:0;*/
+	/*right:0;*/
+	/*bottom:0;*/
+}
+#foot dl{
+	display:flex;
+	justify-content:space-between;
+	/*width:1200px;*/
+}
+#foot dl dd{
+	width:158px;
+	height:70px;
+
+}
+#foot dl span{
+	width:83px;
+	font-size:18px;
+	color:#FF2832;
+	float:right;
+}
+#foot dl img{
+	float:left;
+}
+/*底部*/
+#foot p{
+	height:100px;
+	background:#fff;
+	width:100%;
+	/*width:1200px;*/
+	text-align:center;
+	padding-top:30px;
+	color:#8A7575;
+}
+#foot p img{
+	margin:0 10px;
+}

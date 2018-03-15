@@ -1,0 +1,72 @@
+/*logo*/
+a.logo img{
+	width:90px;	
+	margin-top:20px;
+}
+p.register{
+	border-bottom:1px solid #c8c3c3;
+}
+p.register span{
+	margin-left:200px;
+	margin-top:-20px;
+	display:block;
+	border:1px solid #c8c3c3;
+	border-bottom:2px solid #fff;
+	position:relative;
+	top:1px;
+	width:150px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+}
+/*表格*/
+#container form{
+	width:590px;
+	background:rgba(254,249,246,0.3);
+	margin:30px 300px;
+	border-radius:3px;
+	padding:28px;
+	/*border:1px solid #c8c3c3;*/
+}
+#container form>p{
+	font-size:18px;
+}
+#container form>p a{
+	font-size:12px;
+	padding-left:200px;
+	color:#636363;
+}
+#container table{
+	border-collapse:separate;
+	border-spacing:0 25px;
+}
+#container table td:first-child{
+	text-align:right;
+	height:36px;
+	line-height:36px;
+}
+#container table td input{
+	width:255px;
+	height:36px;
+	border-radius:3px;
+	border:0;
+	outline:0;
+	padding-left:20px;
+	margin-left:4px;
+	border:1px solid #c8c3c3;
+}
+#container table td #submit{
+	width:275px;
+	height:36px;
+	border-radius:3px;
+	color:white;
+	background-image:linear-gradient(to top,#f20b16,#ff2f2f);
+	cursor:pointer;
+}
+#container table td span{
+	display:inline-block;
+	border-radius:3px;
+	padding:3px;
+	margin-left:6px;
+	color:#fff;
+}

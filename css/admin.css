@@ -1,0 +1,292 @@
+/*整体*/
+	.container{
+		min-height:638px;
+		display:flex;
+	}
+/*侧边*/
+	aside{
+		width:235px;
+		background:#2a3f54;
+		color:#fff;
+	}
+	aside h2{
+		margin:30px auto;
+		padding-left:10px;
+		font-size:22px;
+	}
+	aside .welcome{
+		width:170px;
+		height:80px;
+		margin:30px auto;
+	}
+	aside .welcome span{
+		display:block;
+		width:75px;
+		float:left;
+		margin:5px;
+		color:#f4f4f4;
+	}
+	aside .welcome span:first-child{
+		height:50px;
+		width:50px;
+		border-radius:50%;
+		background:#fff url("../img/admin/book_logo.png") no-repeat;
+		background-size:contain;
+		margin-top:-3px;
+	}
+	aside .home{
+		height:44px;
+		line-height:44px;
+		padding-left:40px;
+		border-right:3px solid #28a79e;
+		box-shadow:0px 0px 5px 0px #172d44;
+		margin-bottom:40px;
+		font-size:16px;
+		font-weight:bold;
+		color:#28a79e;
+	}
+	aside dl{
+		text-align:left;
+	}
+	aside dl dt{
+		font-size:14px;
+		font-weight:bold;
+		height:44px;
+		line-height:44px;
+		border-bottom:1px solid #172d44;
+		padding-left:20px;
+	}
+	aside dl dd{
+		height:44px;
+		line-height:44px;
+		border-bottom:1px solid #172d44;
+		padding-left:40px;
+		color:#f4f4f4;
+		/*background:url("../img/admin/arrow_carrot-up.png") no-repeat 200px center;*/
+		background-size:17px 17px;
+        cursor: pointer;
+	}
+aside dl dd:hover{color:#28a79e;}
+/*主体*/
+	section{
+		background:#f7f7f7;
+		/*flex-grow:4;*/
+		display:flex;
+		flex-direction:column;
+	}
+	/*头部*/
+		section header{
+			background:#ededed;
+			height:60px;
+			line-height:60px;
+			text-align:center;
+			margin-bottom:20px;
+		}
+	/*显示部分*/
+		#principal{
+			flex-grow:2;
+		}
+		/*头*/
+			#principal .header{
+				padding:0 8px;
+			}
+			#principal .header select{
+				padding:5px;
+			}
+			#principal .header select:focus{
+				outline:1px solid #ddd;
+			}
+			#principal .header p{
+				float:right;
+				background:#fff;
+				width:250px;
+				height:34px;
+				border:1px solid #ddd;
+				box-sizing:border-box;
+				line-height:34px;
+				padding:0 9px;
+			}
+			#principal .header p img{
+				width:20px;
+				float:right;
+				margin-top:5px;
+			}
+			#principal .header p input{
+				border:0;
+			}
+			#principal .header p input:focus{
+				outline:0;
+			}
+		/*身*/
+			/*公共*/
+				#table{
+					margin-top:20px;
+					/*padding:13px;*/
+					text-align:center;
+					border-collapse:collapse;
+				}
+				#table p.checkall{
+					position:relative;
+					margin-top:-2px;
+					text-align:left;
+					/*padding-left:25px;*/
+				}
+				#table label{
+					position:absolute;
+					top:3px;
+					padding-left:3px;
+				}
+				#table .hr{
+					border-bottom:1px solid #ddd;
+					padding:5px 0;
+				}
+				#add:hover{
+					background:transparent;
+					color:#73879c;
+				}
+				#add input{
+					background:transparent;
+					border:1px solid #ddd;
+					margin-top:20px;
+					width:80%;
+				}
+				#add input.uid{
+					border:0;
+					text-align:center;
+				}
+				#offer{
+					color:#73879c;
+					background:#337ab7;
+					border:1px solid transparent;
+					color:#fff;
+					padding:5px 8px;
+					box-shadow:1px 1px 0 0 #ddd;
+					border-radius:5px;
+					cursor:pointer;
+				}
+				#offer:hover{
+					background:#226cac;
+					color:#fff;
+				}
+				#offer:focus{
+					outline:0;
+					background:#226cac;
+					color:#fff;
+				}
+			/*中*/
+				#body tr:hover{
+					background:#226cac;
+					color:#fff;
+				}
+				#body input{
+					background:transparent;
+					border:0;
+					text-align:center;
+					width:70%;
+					color:#333;
+				}
+				#body input:focus{
+					outline:1px solid tan;
+					color:white;
+				}
+				#body input:active{
+					outline:0;
+					color:#333;
+				}
+				#body a{
+					margin:0 5px;
+					color:red;
+				}
+				#body a:hover{
+					color:white;
+				}
+			/*下*/
+				#foot p.btns{
+					text-align:left;
+				}
+				#foot .btn,#form input.btn{
+					background:#337ab7;
+					border:1px solid #ddd;
+					color:#fff;
+					padding:8px 15px;
+					height:33px;
+					box-shadow:1px 1px 0 0 #ddd;
+					border-radius:5px;
+					cursor:pointer;
+					margin:35px 0 0 10px;
+				}
+				#foot .btn:focus,#form input.btn:focus{
+					outline:0;
+					background:#226cac;
+					color:#fff;
+				}
+				#foot .btn:hover,#form input.btn:hover{
+					background:#226cac;
+					color:#fff;
+				}
+				#foot dl{
+					float:right;
+					text-align:center;
+					border:1px solid #ddd;
+					border-radius:5px;
+					background:#fff;
+					margin-top:50px;
+				}
+				#foot dd{
+					float:left;
+				}
+				#foot a.first{
+					border-left:0;
+					border-radius:5px 0 0 5px;
+				}
+				#foot a.end{
+					border-radius:0 5px 5px 0;
+				}
+				#foot dd a{
+					display:block;
+					float:left;
+					padding:0px 15px;
+					height:33px;
+					color:#337ab7;
+					line-height:33px;
+					border-left:1px solid #ddd;
+				}
+				#foot dd a:hover{
+					background:#226cac;
+					color:#fff;
+				}
+				#foot a.active{
+					background:#226cac;
+					color:#fff;
+				}
+	/*隐藏部分*/
+		#form{
+			margin:30px auto;
+			text-align:center;
+		}
+		#form input{
+			margin-left:20px;
+		}
+		#form p{
+			margin-top:30px;
+		}
+		#form p.sub{
+			margin-top:0;
+			width:254px;
+			margin:0 auto;
+			text-align:center;
+		}
+		#form p.sub input{
+			margin-right:10px;
+		}
+	/*尾部*/
+			section footer{
+				background:#fff;
+				height:40px;
+				line-height:40px;
+				text-align:right;
+				padding-right:20px;
+			}
+			section footer a{
+				color:#636363;
+			}

@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-商品分类</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/products.css">
+	</head>
+ <body>
+		<!--头部-->
+		<header id="header">
+			<!--<iframe src="header.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</header>
+		<!--返回顶部-->
+		<div id="totop">
+			<img src="img/code.gif" alt="code">
+			<img src="img/top.gif" alt="top">
+		</div>
+		<!--主体-->
+		<div id="main">
+			<!--面包屑导航-->
+			<p id="bread_crumb">
+				<a href="index.html">心灵驿站</a><span>&gt;</span>
+				<a href="products.html">图书分类</a>
+			</p>
+			<!--分类-->
+			<div id="family">
+				<ul>
+					<li>
+						<ul class="classify">
+							<li>分类</li>
+							<li>文艺</li>
+							<li>童书</li>
+							<li>生活</li>
+							<li>人文社科</li>
+							<li>经营</li>
+							<li>科技</li>
+						</ul>
+					</li>
+					<li>
+						<ul class="price">
+							<li>价格</li>
+							<li>1-19</li>
+							<li>19-29</li>
+							<li>29-40</li>
+							<li>50-100</li>
+						</ul>
+					</li>
+                    <li id="author">
+                        <ul class="score">
+                            <li>作者</li>
+                            <li>钱儿妈（白雁飞）</li>
+                            <li>冀剑制</li>
+                            <li>老舍</li>
+                            <li>特立独行的猫</li>
+                            <li>（美）弗兰克尔</li>
+                            <li>匪我思存</li>
+                            <li>（美）马尔科姆·考利</li>
+                            <li>卓雅</li>
+                            <li>舒乙</li>
+                        </ul>
+                    </li>
+					<li>
+						<ul class="discount">
+							<li>折扣</li>
+							<li>3折以下</li>
+							<li>3-5折</li>
+							<li>5-7折</li>
+							<li>7折以上</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--选项头-->
+			<nav>
+				<dl>
+					<dd class="active" data-id="allsort">综合排序</dd>
+					<dd data-id="discount">折扣</dd>
+					<dd data-id="author">作者</dd>
+					<dd data-id="publish">出版社</dd>
+					<dd data-id="price">价格</dd>
+					<!--<dd>-->
+						<!--<input type="text" maxlength="4">-->
+						<!--<span>-</span>-->
+						<!--<input type="text" maxlength="4">-->
+					<!--</dd>-->
+					<!--<dd>
+						配送至：
+						<input type="text" placeholder="北京" maxlength="4">
+					</dd>-->
+					<dd id="pages">
+						<!--<a class="l" id="l"><img src="img/products/ls.gif"/></a>
+						<span>1/100</span>
+						<a class="r" id="r"><img src="img/products/r.gif"/></a>-->
+					</dd>
+				</dl>
+			</nav>
+			<!--分类详情-->
+			<div id="classification" class="table clear">
+				<!--<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>
+				<div>
+					<a class="preview" href="product_details.html"></a>
+					<dl class="describe">
+						<dd class="title"><a href="product_details.html">解忧杂货店</a><a href="index.html" class="home">心灵驿站</a></dd>
+						<dd class="price"><span>￥23.8</span>定价：<span>￥44.8</span></dd>
+						<dd class="author">冬夜鬼武</dd>
+						<dd class="comment"><a href="product_details.html">12345条评论</a></dd>
+						<dd class="details">《解忧杂货店》是日本作家东野圭吾写作的奇幻温情小说。2011年于《小说野性时代》连载，于2012年3月由角川书店发行单行本。该书讲述了在僻静街道旁的一家杂货店，只要写下烦恼投进店前门卷帘门的投信口，第二天就会在店后的牛奶箱里得到回答：因男友身患绝症，年轻女孩月兔在爱情与梦想间徘徊；松冈克郎为了音乐梦想离家漂泊，却在现实中寸步难行；少年浩介面临家庭巨变，挣扎在亲情与未来的迷茫中……他们将困惑写成信投进杂货店，奇妙的事情随即不断发生。</dd>
+						<dd class="btn">
+							<a href="cart.html">加入购物车</a>
+							<a href="order_confirm.html">立即购买</a>
+							<a href="my_collect.html">收藏</a>
+						</dd>
+					</dl>
+				</div>-->
+			</div>
+			<!--页码-->
+			<div id="page">
+				<ul>
+				<!--	<li>上一页</li>
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>下一页</li>-->
+				</ul>
+			</div>
+		</div>
+		<!--尾部-->
+		<footer id="footer">
+			<!--<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</footer>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/products.js"></script>
+ </body>
+</html>

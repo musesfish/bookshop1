@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-我的购物车</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/cart.css">
+	</head>
+ <body>
+		<!--头部-->
+		<header id="header">
+			<!--<iframe src="header.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</header>
+		<!--主体-->
+		<div id="main">
+			<!--面包屑导航-->
+			<p id="bread_crumb">
+				您当前位置：
+				<a href="index.html">心灵驿站</a><span>&gt;</span>
+				<a href="#">我的购物车</a>
+			</p>
+			<!--2 页面主体 购物车-->
+			<section class="boxfather">
+			<!--头部-->
+				<div class="table head">
+					<h2>购物车</h2>
+					<p class="rt">
+						已选<b data-sel-count="selcount">0</b>件商品<span>合计(不含运费):</span><b data-all-price="allprice">0.00</b><b>元</b>
+					</p>
+				</div>
+			<!--中部-->
+				<div class="box">
+					<div class="imfor-top">
+						<p id="TcheckA" style="cursor: pointer" data-checkA="f">
+							<img src="img/cart/product_normal.png" alt="product_normal">
+							全选
+						</p>
+						<p>商品</p>
+						<p>单价（元）</p>
+						<p>数量</p>
+						<p>总金额</p>
+						<p>操作</p>
+					</div>
+					<div id="cartContent">
+					<!--<div class="imfor">
+						<div class="check">
+							<img src="img/cart/product_normal.png" alt="product_normal">
+						</div>
+						<div class="product">
+							<a href="product_details.html"><img src="img/cart/b1.png" title="查看详情" alt="58a2c667Ne2b5cb73" class="lf"  width="13%"></a>
+							<div class="rt">
+								<p>神舟(HASEE)战神Z6-KP7GT 15.6英寸游戏本笔记本电脑(i7-7700HQ 8G 1T+128G SSD GTX1050 1080P)黑色 </p>
+								<p>规格：Z6 GT【i7 128G+1T GTX1050】</p>
+							</div>
+						</div>
+						<div class="price">
+							<a href="index.html" class="home">心灵驿站</a>
+							<span>￥5699.00</span>
+						</div>
+						<div class="num">
+							<p>
+								<button>-</button>
+								<input type="text" value="1">
+								<button>+</button>
+							</p>
+						</div>
+						<div class="total"><span>￥ 5699</span></div>
+						<div class="delete.php"><a href="#">删除</a></div>
+					</div>
+					<div class="imfor">
+						<div class="check">
+							<img src="img/cart/product_normal.png" alt="product_normal">
+						</div>
+						<div class="product">
+							<a href="product_details.html"><img src="img/cart/b1.png" title="查看详情" alt="58a2c667Ne2b5cb73" class="lf"  width="13%"></a>
+							<div class="rt">
+								<p>神舟(HASEE)战神Z6-KP7GT 15.6英寸游戏本笔记本电脑(i7-7700HQ 8G 1T+128G SSD GTX1050 1080P)黑色 </p>
+								<p>规格：Z6 GT【i7 128G+1T GTX1050】</p>
+							</div>
+						</div>
+						<div class="price">
+							<a href="index.html" class="home">心灵驿站</a>
+							<span>￥5699.00</span>
+						</div>
+						<div class="num">
+							<p>
+								<button>-</button>
+								<input type="text" value="1">
+								<button>+</button>
+							</p>
+						</div>
+						<div class="total"><span>￥ 5699</span></div>
+						<div class="delete.php"><a href="#">删除</a></div>
+					</div>
+					<div class="imfor">
+						<div class="check">
+							<img src="img/cart/product_normal.png" alt="product_normal">
+						</div>
+						<div class="product">
+							<a href="product_details.html"><img src="img/cart/b1.png" title="查看详情" alt="58a2c667Ne2b5cb73" class="lf"  width="13%"></a>
+							<div class="rt">
+								<p>神舟(HASEE)战神Z6-KP7GT 15.6英寸游戏本笔记本电脑(i7-7700HQ 8G 1T+128G SSD GTX1050 1080P)黑色 </p>
+								<p>规格：Z6 GT【i7 128G+1T GTX1050】</p>
+							</div>
+						</div>
+						<div class="price">
+							<a href="index.html" class="home">心灵驿站</a>
+							<span>￥5699.00</span>
+						</div>
+						<div class="num">
+							<p>
+								<button>-</button>
+								<input type="text" value="1">
+								<button>+</button>
+							</p>
+						</div>
+						<div class="total"><span>￥ 5699</span></div>
+						<div class="delete.php"><a href="#">删除</a></div>
+					</div>-->
+					</div>
+				</div>
+			<!--尾部-->
+				<div class="bottom">
+					<p class="lf">
+						<span><img class="BcheckA" src="img/cart/product_normal.png" alt="product_normal" style="cursor: pointer"></span>
+						<a href="javascript:void(0)" id="BcheckA">全选</a>
+						<a href="#" id="delSel">删除</a>
+						<a href="#" class="invalued" id="clearAll">清空购物车</a>
+					</p>
+					<p class="right rt">
+						已选<b data-sel-count="selcount">0</b>件商品<span>合计(不含运费):</span><b data-all-price="allprice">0.00</b><b>元</b>
+						<a href="#" id="order-confirm">去结算</a>
+					</p>
+				</div>
+			</section>
+		</div>
+		<!--尾部-->
+		<footer id="footer">
+			<!--<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</footer>
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/header.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/cart.js"></script>
+ </body>
+</html>

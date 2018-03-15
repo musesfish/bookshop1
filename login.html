@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="Author" content="smy">
+		<meta name="Keywords" content="bookshop">
+		<meta name="Description" content="书店">
+		<title>心灵驿站-登录页</title>
+		<link rel="icon" href="img/ico.ico">
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+ <body>
+		<!--主体-->
+		<div id="main">
+			<div id="container">
+				<div class="lside">
+					<a href="index.html" class="logo float"><img src="img/book_logo.png" alt="logo"></a>
+					<a href="index.html" class="ad"><img src="img/login/adimg.gif" alt="adimg"></a>
+				</div>
+				<div class="rside">
+					<div id="login">
+						<p class="logtitle">
+							<span>登录心灵驿站</span>
+						</p>
+						<p class="yhm">
+							<input type="text" id="uname" placeholder="请输入您的用户名" maxlength="8"><span>用户名不为空</span>
+						</p>
+						<p class="mm">
+							<input type="password" id="upwd" placeholder="请输入您的密码" maxlength="12"><span>密码不为空</span>
+						</p>
+                        <div id="vcode" class="vcodes hidden">
+                            <img src="data/login/code_gg.php" class="change_img">
+                            <input type="text"  name="vcode" placeholder="验证码" required />
+                            <a href="#" class="change_vcode">看不清换一张</a>
+                        </div>
+						<p class="auto">
+							<input type="checkbox" id="autolg">自动登录
+							<a href="#">忘记密码?</a>
+						</p>
+							<input type="button" value="登录" id="btnlogin">
+						<p>
+							<a href="register.html">立即注册</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--尾部-->
+		<footer id="footer">
+			<!--<iframe src="footer.html" frameborder="0" scrolling="no"></iframe>-->
+			<img src="img/loading.gif" alt="加载中..." >
+		</footer>
+        <script src="js/jquery-3.2.1.js"></script>
+		<script src="js/ajax.js"></script>
+		<script src="js/footer.js"></script>
+		<script src="js/login.js"></script>
+ </body>
+</html>

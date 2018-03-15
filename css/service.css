@@ -1,0 +1,41 @@
+/*主体*/
+	section{
+		width:1000px;
+		margin:0 auto;
+	}
+	/*面包屑导航*/
+	#bread_crumb{
+		height:36px;
+		padding-top:10px;
+	}
+	#bread_crumb a{
+		color:#636363;
+		padding-right:3px;
+	}
+	/*置顾客*/
+	.toCustomer{
+			border:1px solid #c8c3c3;
+			width:800px;
+			margin:0 auto;
+		}
+	.toCustomer p{
+		border-bottom:1px solid #c8c3c3;
+		height:28px;
+		line-height:28px;
+		background:#f5f5f5;
+		padding-left:28px;
+		box-sizing:border-box;
+		margin:0 auto;
+		color:#333;
+		font-weight:bold;
+	}
+	.toCustomer .content{
+		margin:30px;
+	}
+	.toCustomer .content li{
+		padding-bottom:10px;
+	}
+	.toCustomer .content li b{
+		font-weight:normal;
+		color:#fe3227;
+	}

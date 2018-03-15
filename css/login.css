@@ -1,0 +1,118 @@
+/*主体*/
+	#container{
+		display:flex;
+		margin:30px;
+		/*justify-content:space-between;*/
+	}
+/*左侧边*/
+	#container .lside a.logo img{
+		width:90px;
+	}
+	#container .lside a.ad img{
+		width:630px;
+	}
+/*右侧边*/
+	#container .rside{
+		width:300px;
+	}
+	/*登录*/
+		#login{
+			width:281px;
+			min-height:316px;
+			margin-top:122px;
+			margin-left:122px;
+			padding:30px;
+			border:1px solid #c8c3c3;
+			display:flex;
+			flex-direction:column;
+			justify-content:space-between;
+		}
+        #login p.logtitle{
+            margin-bottom: 10px;
+        }
+		#login p span{
+			font-size:17px;
+			/*font-weight:bold;*/
+		}
+		#login p a{
+			float:right;
+			padding-top:4px;
+		}
+		#login p.yhm,#login p.mm{
+			width:100%;
+			height:37px;
+			line-height:37px;
+			border:1px solid #c8c3c3;
+			margin-bottom:30px;
+		}
+		#login p.yhm{
+			background:#fff url("../img/login/yhm.png") no-repeat 97% center;
+		}
+		#login p.mm{
+			background:#fff url("../img/login/mm.png") no-repeat 97% center;
+		}
+		#login p.yhm span,#login p.mm span{
+			color:red;
+			font-size:12px;
+			visibility:hidden;
+			display:block;
+		}
+		#login #uname,#login #upwd{
+			margin-left:20px;
+			border:0;
+			outline:0;
+		}
+        /*//autocomplete="off"*/
+        input:-webkit-autofill{
+            -webkit-box-shadow: 0 0 0px 1000px white inset;
+        }
+		#login p.auto{
+			padding-bottom:12px;
+			margin-top:-5px;
+		}
+		#login p.auto input{
+			position:relative;
+			top:2px;
+		}
+		#login #btnlogin{
+			border-radius:2px;
+			color:white;
+			background-image:linear-gradient(to top,#f20b16,#ff2f2f);
+			width:100%;
+			height:37px;
+			border:0;
+			outline:0;
+			cursor:pointer;
+            margin-bottom: 10px;
+		}
+/*//验证码*/
+	#vcode{
+		margin:20px 0;
+		min-height:40px;
+		/*border:1px solid red;*/
+	}
+	#vcode input{
+		width:80px;
+		height:33px;
+		line-height: 33px;
+		padding-left: 5px;
+		float: right;
+	}
+	#vcode img{
+		width:160px;
+		height:40px;
+		/*border:1px solid green;*/
+	}
+	#vcode a{
+		width:160px;
+		height:20px;
+		line-height: 20px;
+		text-align: center;
+		display: inline-block;
+        color:#333;
+		opacity: 0.8;
+        /*border: 1px solid red;*/
+	}
+	.hidden{
+		display: none;
+	}

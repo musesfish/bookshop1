@@ -1,0 +1,27 @@
+@keyframes slide-down-up{
+	0%{
+		padding-top:0px;
+	}
+	40%{
+		padding-top:66px;
+	}
+	60%{
+		padding-top:100px;
+	}
+	80%{
+		padding-top:66px;
+	}
+	100%{
+		padding-top:100px;
+	}
+}
+a{
+	margin:0 auto;
+	display:block;
+	text-align:center;
+	padding-top:100px;
+	animation:slide-down-up 1s ease-in-out;
+}
+a img{
+	width:580px;
+}

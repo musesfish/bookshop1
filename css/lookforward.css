@@ -1,0 +1,47 @@
+@keyframes slide-down-up{
+	0%{
+		top:0px;
+	}
+	40%{
+		top:66px;
+	}
+	60%{
+		top:100px;
+	}
+	80%{
+		top:66px;
+	}
+	100%{
+		top:100px;
+	}
+}
+@keyframes slide-down{
+	0%{
+		top:200px;
+	}
+	100%{
+		top:230px;
+	}
+}
+div.lookf{
+	/*border:1px solid red;*/
+	margin:0 auto;
+	width:500px;
+	height:300px;
+	padding:50px;
+	position:relative;
+}
+div.lookf p{
+	font-size:20px;
+	color:#CFCFCF;
+	position:absolute;
+	top:230px;
+	left:180px;
+	animation:slide-down 1s ease-in;
+}
+div.lookf img{
+	animation:slide-down-up 1s ease-in;
+	position:absolute;
+	top:100px;
+	left:255px;
+}

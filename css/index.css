@@ -1,0 +1,448 @@
+/*楼层导航*/
+	#floor{
+		width:53px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+		position:fixed;
+		top:90px;
+		left:0;
+		z-index:99;
+		cursor:pointer;
+		display:none;
+	}
+	#floor li{
+		width:40px;
+		margin-top:2px;
+		/*background:#EAEBEF;*/
+		border:1px solid silver;
+		/*border:1px solid #ddd;*/
+		color:#FE2115;
+		/*color:#636363;*/
+		text-align:center;
+		padding:8px 4px;
+		box-sizing:border-box;
+		margin-left:4px;
+		transition:all .3s linear;
+	}
+	#floor li:first-child{
+		width:40px;
+		height:45px;
+		border-radius:40% 40% 0 0;
+	}
+	#floor li:last-child{
+		width:40px;
+		height:45px;
+		border-radius:0 0 40% 40%;
+	}
+	#floor li:hover{
+		background:#FE2115;
+		color:#fff;
+	}
+	.lift_item_on{
+		background:#FE2115;
+		color:#fff!important;
+	}
+/*顶部*/
+	#container{
+		display:flex;
+		width:1200px;
+		justify-content:space-between;
+	}
+/*分类*/
+	#container .classify{
+		width:195px;
+		height:640px;
+		border:1px solid #487a6f;
+		border-radius:3px;
+		overflow:hidden;
+	}
+	#container .classify dt{
+		background:#487a6f;
+		height:36px;
+		text-align:center;
+		line-height:36px;
+		font-size:16px;
+		border-bottom:1px dotted #fff;
+		cursor:pointer;
+		margin-bottom:10px;
+	}
+	#container .classify dt a{
+		color:white;
+	}
+	#container .classify dd{
+		padding:0 12px 0 8px;;
+	}
+	#container .classify dd a:first-child{
+		display:block;
+		background:#fff url("../img/index/arrow_carrot-up.png") no-repeat right center;
+		background-size:10%;
+		height:28px;
+		line-height:28px;
+		font-weight:bold;
+		color:#487a6f;
+		cursor:pointer;
+	}
+	#container .classify dd a:nth-child(2){
+		letter-spacing:2px;
+		display:inline-block;
+		width:168px;
+		line-height:24px;
+		color:#636363;
+		border-bottom:1px dotted #487a6f;
+		padding-bottom:5px;
+		margin-bottom:5px;
+	}
+	#container .classify dd a.bottom{
+		border-bottom:0;
+	}
+/*广告*/
+	#container .advert{
+		width:980px;
+		height:640px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+/*轮播*/
+	#container .advert .carousel{
+		height:420px;
+		width:979px;
+		box-sizing:border-box;
+		overflow:hidden;
+		position:relative;
+	}
+	#container .advert .carousel ul.img{
+		width:5874px;
+		display:flex;
+		cursor:pointer;
+		transition:all .5s linear;
+	}
+	#container .advert .carousel ul.img li{
+		float:left;
+	}
+	#container .advert .carousel ul.dot{
+		position:absolute;
+		top:370px;
+		left:0;
+		width:180px;
+		height:40px;
+		margin:auto;
+		left:0;
+		right:0;
+	}
+	#container .advert .carousel ul.dot li{
+		float:left;
+		border-radius:50%;
+		background:rgba(255,255,255,0.9);
+		width:20px;
+		height:20px;
+		line-height:20px;
+		text-align:center;
+		margin:10px 5px;
+		cursor:pointer;
+	}
+	.active{
+		background:rgba(255,0,0,0.9)!important;
+		color:#fff;
+	}
+	/*轮播左右*/
+	#container .advert .carousel a.ck-slide{
+		position:absolute;
+		background:#fff;
+		opacity:0.3;
+		width:37px;
+		height:71px;
+		border-radius:5px;
+	}
+	#container .advert .carousel a.ck-left{
+		top:162px;
+		left:10px;
+		background:#fff url(../img/index/arrow-left.png) no-repeat center center;
+		transition:all 3s linear;
+	}
+	#container .advert .carousel a.ck-right{
+		top:162px;
+		right:10px;
+		background:#fff url(../img/index/arrow-right.png) no-repeat center center;
+		transition:all 3s linear;
+	}
+/*顶部自播*/
+	.autoplay{
+		height:190px;
+		position:relative;
+		/*border:1px solid #ddd;*/
+		border-radius:5px;
+		overflow:hidden;
+	}
+	.autoplay>span{
+		border:1px solid #ac9f9f;
+		margin:78px 0;
+		border-radius:3px;
+		cursor:pointer;
+		display:block;
+		width:34px;
+		height:34px;
+		position:absolute;
+		z-index:99;
+	}
+	.autoplay>p{
+		width:94px;
+		height:190px;
+		position:absolute;
+		background:#fff;
+		z-index:9;
+	}
+	.autoplay>p:first-child{
+		left:0;
+	}
+	.autoplay>p:last-child{
+		right:0;
+	}
+	.autoplay #pre{
+		background:#eaebef url("../img/index/arrow_carrot-up1.png") no-repeat center center;
+		left:36px;
+	}
+	.autoplay #next{
+		background:#eaebef url("../img/index/arrow_carrot-up2.png") no-repeat center center;
+		right:36px;
+	}
+	.autoplay dl{
+		width:calc(780*2px);
+		position:absolute;
+		left:94px;
+		transition:all .5s linear;
+	}
+	.autoplay dl dd{
+		width:140px;
+		height:188px;
+		margin-left:14px;
+		float:left;
+		text-align:center;
+		border:1px solid #ddd;
+		border-radius:5px;
+	}
+	.autoplay dl dd img{
+		width:85px;
+		cursor:pointer;
+		vertical-align:middle;
+		margin-top:5px;
+	}
+	.autoplay dl dd span.price{
+		font-size:14px;
+		color:#fe4902;
+		font-weight:bold;
+		display:block;
+		margin-top:8px;
+	}
+	.autoplay dl dd span.author{
+		display:block;
+		margin-top:5px;
+	}
+	.autoplay dl dd a:nth-child(2){
+		display:block;
+		margin-top:5px;
+		height:14px;
+		overflow:hidden;
+		cursor:pointer;
+	}
+	.autoplay dl dd a:nth-child(2):hover{
+		height:28px;
+	}
+/*底部公共*/
+	.h2{
+		text-align:center;
+		color:#333;
+		font-weight:bold;
+		font-family:"microsoft yahei";
+		display:block;
+		font-size:18px;
+		cursor:pointer;
+	}
+	.h2:hover{
+		text-align:center;
+		color:#487a6f;
+	}
+/*为您推荐/图书畅销排行榜/图书新品排行榜*/
+	.commonstyle{
+		width:1050px;
+		margin:30px auto;
+	}
+	.commonstyle p{
+		border-bottom:1px solid #b0a2a2;
+		padding-bottom:6px;
+	}
+	.commonstyle p span{
+		font-size:14px;
+		display:inline-block;
+		margin-right:10px;
+		padding-bottom:6px;
+		cursor:pointer;
+		position:relative;
+		top:7px;
+	}
+	#selling p a{
+		position:relative;
+		top:7px;
+	}
+	.commonstyle .selected{
+		border-bottom:2px solid #fe4902;
+		color:#fe4902;
+	}
+	.commonstyle section{
+		height:513px;
+		display:flex;
+		justify-content:space-between;
+		flex-wrap:wrap;
+		margin-top:30px;
+	}
+	.commonstyle section>div{
+		width:175px;
+		margin-bottom:20px;
+		display:flex;
+		justify-content:space-between;
+		flex-direction:column;
+		height:240px;
+		padding-left:15px;
+	}
+	.commonstyle section>div img{
+		width:115px;
+		/*margin-left:12px;*/
+	}
+	.commonstyle section>div span.price{
+		color:#fe4902;
+		font-size:14px;
+		font-weight:bold;
+	}
+	.commonstyle section>div span,.commonstyle section>div a{
+		margin:0 auto;
+		/*border:1px solid red;*/
+	}
+	.commonstyle section>div a:nth-child(2){
+		height:14px;
+		overflow:hidden;
+	}
+	.commonstyle section>div a:nth-child(2):hover{
+		height:28px;
+	}
+/*热门分类*/
+	#hotcategories>div{
+		width:826px;
+		height:627px;
+		margin:30px auto;
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		align-content:space-between;
+	}
+	#hotcategories>div>div{
+		width:410px;
+		height:205px;
+		background:#f4f4f4;
+		display:flex;
+	}
+	#hotcategories>div>div>a{
+		width:153px;
+		height:153px;
+		border-radius:50%;
+		margin:26px;
+	}
+	#hotcategories>div>div>a.literature{
+		background:#fff url("../img/index/category (2).png") no-repeat center center;
+	}
+	#hotcategories>div>div>a.novel{
+		background:#fff url("../img/index/category (3).png") no-repeat center center;
+	}
+	#hotcategories>div>div>a.juvenile{
+		background:#fff url("../img/index/category (4).png") no-repeat center center;
+	}
+	#hotcategories>div>div>a.history{
+		background:#fff url("../img/index/category (5).png") no-repeat center center;
+	}
+	#hotcategories>div>div>a.social{
+		background:#fff url("../img/index/category (6).png") no-repeat center center;
+	}
+	#hotcategories>div>div>a.enconomy{
+		background:#fff url("../img/index/category (1).png") no-repeat center center;
+	}
+	#hotcategories>div>div>ul{
+		padding:43px 0 0 37px;
+	}
+	#hotcategories>div>div>ul a{
+		color:#636363;
+		display:block;
+		margin-bottom:4px;
+	}
+	#hotcategories>div>div>ul a.title{
+		font-size:16px;
+		margin-bottom:6px;
+	}
+	#hotcategories>div>div>ul a.foot{
+		padding-top:8px;
+	}
+/*精选图书推荐/今日最好价*/
+	#selectedbooks{
+		width:1050px;
+		margin:0 auto;
+	}
+	#bestprice{
+		width:1050px;
+		margin:40px auto;
+	}
+	#selectedbooks>a,#bestprice>a{
+		position:relative;
+		top:-17px;
+	}
+	.autoplays{
+		height:220px;
+		margin:30px auto;
+		width:1050px;
+	}
+	.autoplays dl{
+		display:flex;
+		justify-content:space-between;
+		height:220px;
+	}
+	.autoplays dl dt span{
+		height:34px;
+		cursor:pointer;
+		display:block;
+		padding-top:158px;
+		width:28px;
+	}
+	.autoplays dl dt #pre{
+		background:transparent url("../img/index/arrow_carrot-up1.png") no-repeat center center;
+	}
+	.autoplays dl dt #next{
+		background:transparent url("../img/index/arrow_carrot-up2.png") no-repeat center center;
+	}
+	.autoplays dl dd{
+		padding-left:30px;
+		width:170px;
+		display:flex;
+		flex-direction:column;
+		justify-content:space-between;
+	}
+	.autoplays dl dd img{
+		width:105px;
+		margin-bottom:4px;
+		cursor:pointer;
+	}
+	.autoplays dl dd span.price{
+		font-size:14px;
+		color:#fe4902;
+		font-weight:bold;
+	}
+	.autoplays dl dd span,.autoplays dl dd a{
+		margin:0 auto;
+		/*border:1px solid red;*/
+	}
+	.autoplays dl dd a:nth-child(2){
+		height:14px;
+		overflow:hidden;
+	}
+	.autoplays dl dd a:nth-child(2):hover{
+		height:28px;
+	}
+	
+	
